@@ -209,7 +209,19 @@ a {
   flex-basis: calc((100% - 72px) / 4);
 }
 
+.light-item-icon {
+  background-color: var(--light);
+  background-position: center;
+  padding: 24px 100px;
+  border-radius: 4px;
+}
+
+.light-icon {
+  color: var(--dark-blue);
+}
+
 .light-title {
+  margin-top: 8px;
   margin-bottom: 8px;
   font-weight: 700;
   font-size: 20px;
