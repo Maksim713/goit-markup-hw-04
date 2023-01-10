@@ -6,7 +6,9 @@
   --white: #ffffff;
   --light: #f4f4fd;
   --light-gray: #e7e9fc;
+  --green: #31d0aa;
   --bg-gradient: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
+  --bg-media-icon: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -152,7 +154,6 @@ a {
   background-image: var(--bg-gradient), url(../images/dark-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
   padding: 192px 0;
   text-align: center;
 }
@@ -163,7 +164,6 @@ a {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-
   letter-spacing: 0.02em;
   color: var(--white);
 }
@@ -211,7 +211,6 @@ a {
 
 .light-item-icon {
   background-color: var(--light);
-  background-position: center;
   padding: 24px 100px;
   border-radius: 4px;
 }
@@ -328,7 +327,7 @@ a {
 .team-soc-link {
   width: 100%;
   height: 100%;
-  background-color: #4d5ae5;
+  background-color: var(--primary);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -336,12 +335,61 @@ a {
 }
 
 .team-soc-icon {
-  fill: #f4f4fd;
+  fill: var(--light);
 }
 
 .team-soc-link:hover,
 .team-soc-link:focus {
-  background-color: #404bbf;
+  background-color: var(--primary-dark);
+}
+
+/* ---------------SECTION CLIENTS--------------- */
+
+.clients {
+  padding: 120px 0;
+}
+.clients-title {
+  margin-bottom: 72px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+.clients-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.clients-item {
+  width: 168px;
+  height: 88px;
+}
+
+.clients-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--primary-dark);
+}
+
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+  fill: var(--primary-dark);
+}
+
+.clients-icon {
+  fill: #afb1b8;
 }
 
 /* -----------------PORTFOLIO----------------- */
@@ -424,6 +472,15 @@ a {
   background-color: var(--dark-blue);
 }
 
+.footer-info {
+  width: 264px;
+}
+
+.line {
+  display: flex;
+  gap: 120px;
+}
+
 .footer-logos {
   margin-bottom: 16px;
 }
@@ -437,5 +494,44 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--light-gray);
-  width: 264px;
+}
+
+.footer-media {
+  width: 208px;
+}
+
+.title {
+  color: var(--white);
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.footer-soc-list {
+  width: 208px;
+  display: flex;
+  gap: 16px;
+}
+
+.footer-soc-item {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-soc-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-media-icon);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-soc-icon {
+  fill: var(--light);
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: var(--green);
 }
