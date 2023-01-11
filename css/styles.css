@@ -549,6 +549,8 @@ a {
 
 .footer-soc-icon {
   fill: var(--light);
+  width: 24px;
+  height: 24px;
 }
 
 .footer-soc-link:hover,
